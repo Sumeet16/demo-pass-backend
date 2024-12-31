@@ -70,5 +70,8 @@ app.post("/api/color", async (req, res) => {
     }
 });
 
+// setting up an empty GET Route
+app.get('/', (req, res) => { res.json({ message: "You've come to the right place... it's a GET request!!" }) });
+
 // Start the server
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
